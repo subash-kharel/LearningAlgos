@@ -23,7 +23,6 @@ public class SmallestDifference {
                 if(difference<prev){
                     prev = difference;
                     resultArr = new int[]{firstArray[i],secondArray[j]};
-
                 }
             }
         }
