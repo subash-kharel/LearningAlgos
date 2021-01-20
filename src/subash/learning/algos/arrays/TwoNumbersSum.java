@@ -8,7 +8,7 @@ import java.util.Set;
 public class TwoNumbersSum {
 
     // time complexity n^2; space complexity: O(1)
-    public static int [] twoNumberSum(int[] arrayOfInts, int targetSum){
+    public  int [] twoNumberSum(int[] arrayOfInts, int targetSum){
         for (int i = 0; i < arrayOfInts.length-1;i++){
             for(int j = i+1; j< arrayOfInts.length; j++){
                 if((arrayOfInts[i] + arrayOfInts[j])== targetSum){
@@ -21,7 +21,7 @@ public class TwoNumbersSum {
 
     // time complexity O(n); space complexity: O(n)
 
-    public static int [] twoNumberSum1(int[] arrayOfInts, int targetSum){
+    public  int [] twoNumberSum1(int[] arrayOfInts, int targetSum){
         Set<Integer> numbers = new HashSet<>();
         for(int number: arrayOfInts){
             int potentialTargetVal = targetSum - number;
@@ -58,10 +58,10 @@ public class TwoNumbersSum {
 
 
     public static void main(String[] args) {
-        int[] testArray = new int[]{3, 5, -4, 8, 11, 1, -1, 6};
-        int targetSum = 10;
-        System.out.println("First Method---->" +Arrays.toString(twoNumberSum(testArray, targetSum)));
-        System.out.println("Second Method---->" +Arrays.toString(twoNumberSum1(testArray, targetSum)));
-        System.out.println("Third Method---->" +Arrays.toString(twoNumberSum2(testArray, targetSum)));
+//        int[] testArray = new int[]{3, 5, -4, 8, 11, 1, -1, 6};
+//        int targetSum = 10;
+//        System.out.println("First Method---->" +Arrays.toString(twoNumberSum(testArray, targetSum)));
+//        System.out.println("Second Method---->" +Arrays.toString(twoNumberSum1(testArray, targetSum)));
+//        System.out.println("Third Method---->" +Arrays.toString(twoNumberSum2(testArray, targetSum)));
     }
 }

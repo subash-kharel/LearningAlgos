@@ -12,7 +12,7 @@ public class SmallestDifference {
 
     //Time Complexity: O(n2)
     //Space Complexity: O(1)
-    public static int[] smallestDifference(int[] firstArray, int[] secondArray){
+    public int[] smallestDifference(int[] firstArray, int[] secondArray){
         int[] resultArr = new int[]{};
         int prev = Integer.MAX_VALUE;
         for(int i =0; i< firstArray.length-1; i++){
@@ -31,9 +31,9 @@ public class SmallestDifference {
 
     public static void main(String[] args) {
 
-        int[] firstArray = {-1,5,10,20,28,3};
-        int[] secondArray = {26,134, 135,15,17};
-        System.out.println(Arrays.toString(smallestDifference(firstArray,secondArray)) );
+//        int[] firstArray = {-1,5,10,20,28,3};
+//        int[] secondArray = {26,134, 135,15,17};
+//        System.out.println(Arrays.toString(smallestDifference(firstArray,secondArray)) );
         //expected return here is : [28,26]
     }
 }
