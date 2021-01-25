@@ -10,6 +10,7 @@ public class FourNumbersSum {
     // O(n^4) time complexity
     //O(1) space complexity
     public static List<Integer[]> fourNumberSum(int[] array, int target){
+        Arrays.sort(array);
         List<Integer[]> arrayOfInteger = new ArrayList<>();
         for(int i =0; i<array.length-3;i++){
             for(int j= i+1; j<array.length-2;j++){

@@ -37,7 +37,7 @@ public class LargestConsecutiveSequence {
 
     public static void main(String[] args) {
         int[] nums = {100,101,99, 4, 200, 1, 3, 2};
-        //expected result =4 because longest sequece is 1,2,3,4 and is of length 4.
+        //expected result =4 because longest sequence is 1,2,3,4 and is of length 4.
         System.out.println(longestConsecutive(nums));
     }
 }

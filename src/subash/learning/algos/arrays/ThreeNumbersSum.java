@@ -36,6 +36,7 @@ public class ThreeNumbersSum {
     //time complexity: O(n3)
     //space complexity O(n)
     public  List<Integer[]> threeNumberSum1(int[] array, int targetSum){
+        Arrays.sort(array);
         List<Integer[]> twoDimentionalArr = new ArrayList<Integer[]>();
         for(int i =0; i< array.length-2; i++){
             for(int j = i+1; j< array.length-1; j++){
